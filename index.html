@@ -2,22 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ryan Gaulding | Portfolio </title>
-    <link rel="shortcut icon" type="image/png" href="img/icon.png">
-    <link rel="stylesheet" type="text/css" href="css/background.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional inline styles for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #66ccff;
+        }
+        section {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .project {
+            display: inline-block;
+            width: calc(33.33% - 20px);
+            margin: 0 10px;
+            vertical-align: top;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .project h3 {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+        }
+        .project p {
+            margin-top: 0.5rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-<center><h1>"Hello World!"</h1></center>
-<center><p>This is my website hosted on Github.</p></center>
-<div style="position: relative; top: 75pxl z-index: 1"><center>    <img src="https://github.com/RyanGaulding/RyanGaulding.github.io/blob/main/img/RyanFace.JPG?raw=true" height="150px">
-</center>
-</div>
-<center><h2>About Me</h2><p>
-    I am currently a senior at the University of Texas at Dallas(UTD) majoring in Computer Science.
-</p></center>
-<a href="/projects/">
-    <button class="ui basic button">Projects </button>
-</a>
+<header>
+    <nav>
+        <div class="container">
+            <h1>Your Name</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself and your skills here.</p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>You can reach me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
